@@ -10,3 +10,5 @@ paper airplane animation using javascript
 ## Live website can be viewed here
 
 https://peter-kimanzi.github.io/paper-airplane/
+
+## screenshots
