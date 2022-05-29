@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.root > svg {
+  display: inline-block;
+  position: absolute;
+  top: -1%;
+  left: 10%;
+  transform: translateX(2000px);
+  animation: float 8s linear infinite forwards;
+  opacity: 0.4;
+}
+
+html {
+  background-color: #a3a3f4;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.root {
+  height: 100%;
+  width: 10%;
+  overflow: hidden;
+}
+.root .plane > svg {
+  top: 40%;
+  transform-origin: center right;
+  animation: fly 11s linear infinite;
+  position: absolute;
+  max-height: 200px;
+  z-index: 999999;
+}
+
+@keyframes fly {
+  0%, 100% {
+    transform: rotate(45deg) translateX(30%);
+  }
+  33% {
+    transform: rotate(25deg) translateX(50%);
+  }
+  66% {
+    transform: rotate(60deg) translateX(10%);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(10%) translateX(100%);
+  }
+  80% {
+    transform: translateY(10%) translateX(-100%);
+  }
+  90% {
+    transform: translateY(-500%) translateX(-100%);
+  }
+  95% {
+    transform: translateY(-500%) translateX(100%);
+  }
+}
