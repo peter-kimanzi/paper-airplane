@@ -1,6 +1,6 @@
 # paper-airplane
 
-paper airplane animation using javascript
+paper airplane animation using javascrip
 
 ## Technologies used
 * HTML
